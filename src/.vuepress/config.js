@@ -47,23 +47,38 @@ module.exports = {
 		editLinkText: "",
 		serviceWorker: true,
 		lastUpdated: false,
-		logo: 'react.svg',
+		logo: '/react.svg',
 		nav: [
 			{
-				text: "Guide",
+				text: "Curs",
 				link: "/guide/",
 			},
 			{
-				text: "VuePress",
-				link: "https://v1.vuepress.vuejs.org",
+				text: "React.js",
+				link: "https://react.dev/",
+        target: "_blank",
 			},
 		],
 		sidebarDepth: 1,
 		sidebar: [
 			{
-				title: "🐰 Parte introductivă",
+				title: "Parte introductivă",
 				collapsable: false,
-				children: [["/introduction/introduction", "Introducere în curs"]],
+				children: [
+          ["/introduction/introduction", "Introducere în curs"],
+          ["/introduction/program", "Programul cursului"]
+        ],
+			},
+      {
+				title: "Fundamentele React",
+				collapsable: false,
+				children: [
+          ["/base/history", "Istoria creării React"],
+          ["/base/connect", "Conectarea React"],
+          ["/base/render", "Rendering în React"],
+          ["/base/virtualdom", "Virtual DOM"],
+          ["/base/jsx", "Ce este JSX"],
+        ],
 			},
 		],
 	},
@@ -74,6 +89,14 @@ module.exports = {
 	plugins: [
 		"@vuepress/plugin-back-to-top",
 		"@vuepress/plugin-medium-zoom",
+    [
+      "vuepress-plugin-code-copy", 
+      {
+        align: 'bottom',
+        successText: 'Copiat!',
+        backgroundColor: '#f5f5f5',
+      }
+    ],
 		[
 			"@vuepress/pwa",
 			{
