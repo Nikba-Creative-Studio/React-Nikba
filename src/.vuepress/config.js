@@ -47,6 +47,7 @@ module.exports = {
 		editLinkText: "",
 		serviceWorker: true,
 		lastUpdated: false,
+		logo: 'react.svg',
 		nav: [
 			{
 				text: "Guide",
