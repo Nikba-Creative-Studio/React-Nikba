@@ -78,6 +78,7 @@ module.exports = {
           ["/base/render", "Rendering în React"],
           ["/base/virtualdom", "Virtual DOM"],
           ["/base/jsx", "Ce este JSX"],
+          ["/base/decomposition", "Decompunerea UI"],
         ],
 			},
 		],

@@ -43,11 +43,11 @@ Vom vorbi mai detaliat despre acest lucru în lecțiile următoare, dar pentru m
 	<head>
 		<meta charset="UTF-8" />
 		<script
-			src="https://unpkg.com/react@17/umd/react.development.js"
-			crossorigin></script>
+			crossorigin
+			src="https://unpkg.com/react@18/umd/react.development.js"></script>
 		<script
-			src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-			crossorigin></script>
+			crossorigin
+			src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 	</head>
 	<body>
 		<div id="root"></div>
@@ -67,11 +67,11 @@ Sunteți deja pregătiți să scrieți prima aplicație pe React. Pentru aceasta
 	<head>
 		<meta charset="UTF-8" />
 		<script
-			src="https://unpkg.com/react@18/umd/react.development.js"
-			crossorigin></script>
+			crossorigin
+			src="https://unpkg.com/react@18/umd/react.development.js"></script>
 		<script
-			src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-			crossorigin></script>
+			crossorigin
+			src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 	</head>
 	<body>
 		<div id="root"></div>

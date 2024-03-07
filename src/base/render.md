@@ -83,6 +83,13 @@ Iată ce se întâmplă de fapt:
 
 ![React Render](../img/render.gif)
 
+<iframe src="https://codesandbox.io/embed/48rc6s?view=Editor+%2B+Preview&module=%2Findex.html"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="Rendering în React"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
 Doar elementul <mark>h2</mark>, care conține <mark>new Date().toLocaleTimeString()</mark>, este actualizat, iar restul elementelor arborelui nu sunt redesenate. ReactDOM compară elementul și arborele său copil cu versiunea anterioară și face în DOM doar schimbările necesare.
 
 Elementele React sunt imuabile: după crearea unui element, nu este posibil să-i schimbați descendenții sau atributele. Imutabilitatea permite doar recrearea elementelor, ceea ce ajută la eliminarea multor erori care apar în crearea interfețelor utilizator. În React, un element poate fi considerat ca un cadru de film: reflectă starea interfeței la un moment dat. În cadrul acestui curs, veți întâlni de mai multe ori imutabilitatea.
