@@ -98,7 +98,7 @@ Regula este că un bloc de cod JSX trebuie să conțină doar un singur element 
 În exemplu, sunt folosite două elemente adiacente: <mark>#myElement</mark> și <mark>#myAnotherElement</mark>.
 
 Pentru ca codul JSX să funcționeze corect, "învelim" aceste două elemente într-un fragment.
-Fragmentele nu au funcționalitate suplimentară și pot fi percepute ca paranteze „încadrante” în codul JSX. În locul lor, se putea folosi un <mark>< div ></mark> obișnuit, dar acest lucru ar crea elemente inutile în DOM - o risipă inutilă de resurse, care poate provoca dificultăți suplimentare în stilizare.
+Fragmentele nu au funcționalitate suplimentară și pot fi percepute ca paranteze „încadrante” în codul JSX. În locul lor, se putea folosi un <mark>&#60;div&#62;</mark> obișnuit, dar acest lucru ar crea elemente inutile în DOM - o risipă inutilă de resurse, care poate provoca dificultăți suplimentare în stilizare.
 
 
 ## Logica condițională
@@ -212,7 +212,7 @@ const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(<div style={styles}>Ce planetă sunt?</div>);
 ```
 
-Valoarea poate fi atribuită direct fără o variabilă intermediară. Pentru aceasta se folosesc paranteze duble <mark>{ {...} }</mark>: parantezele exterioare semnifică substituția valorii, iar cele interioare se referă la obiectul care descrie setul de stiluri:
+Valoarea poate fi atribuită direct fără o variabilă intermediară. Pentru aceasta se folosesc paranteze duble <mark>&#0123; &#0123; ... &#0125; &#0125;</mark>: parantezele exterioare semnifică substituția valorii, iar cele interioare se referă la obiectul care descrie setul de stiluri:
 
 ```javascript
 const root = ReactDOM.createRoot(document.querySelector("#root"));
