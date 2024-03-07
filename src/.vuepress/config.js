@@ -110,5 +110,11 @@ module.exports = {
 				updatePopup: true,
 			},
 		],
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'G-9ZM8VVKLTR' // UA-00000000-0
+      }
+    ],
 	],
 };
