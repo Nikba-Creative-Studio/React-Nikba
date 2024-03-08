@@ -60,7 +60,7 @@ export default defineUserConfig({
 			},
 		},
 
-		sidebarDepth: 2,
+		
 
 		sidebar: [
 			{
