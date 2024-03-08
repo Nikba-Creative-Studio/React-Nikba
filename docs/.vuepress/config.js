@@ -8,7 +8,7 @@ import { catalogPlugin } from "@vuepress/plugin-catalog";
 import { sitemapPlugin } from "@vuepress/plugin-sitemap";
 import { seoPlugin } from "@vuepress/plugin-seo";
 import { pwaPlugin } from "@vuepress/plugin-pwa";
-import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 
 export default defineUserConfig({
 	lang: "ro-RO",
@@ -17,13 +17,41 @@ export default defineUserConfig({
 	description:
 		"Vă veți pune bazele învățării React. Veți stăpâni toate instrumentele de bază de depanare și dezvoltare care fac parte din bibliotecă, veți crea scheletul aplicației și veți pregăti toate componentele de design.",
 	shouldPrefetch: false,
+	
+	head: [
+		["meta", { name: "theme-color", content: "#3eaf7c" }],
+		["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+		[
+			"meta",
+			{ name: "apple-mobile-web-app-status-bar-style", content: "black" },
+		],
+
+		['link', { rel: 'icon', href: '/react.svg' }],
+		['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
+		['link', { rel: 'manifest', href: '/manifest.json' }],
+		['meta', { name: 'theme-color', content: '#3eaf7c' }],
+		['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+		['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+		['link', { rel: 'apple-touch-icon', href: '/android-chrome-512x512.png' }],
+		['link', { rel: 'mask-icon', href: 'react.svg', color: '#3eaf7c' }],
+		['meta', { name: 'msapplication-TileImage', content: '/android-chrome-192x192.png' }],
+		['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+	],
+	
 	theme: defaultTheme({
 		logo: "./react.svg",
 		navbar: ["/", "/get-started"],
+		locales: {
+			"/": {
+				lastUpdatedText: "Ultima actualizare",
+				contributorsText: "Contribuitori",
+			},
+		},
+
 		sidebar: [
 			{
 				text: "Parte introductivă",
-				collapsible: false,
+				collapsible: true,
 				children: [
 					{
 						text: "Introducere în curs",
@@ -37,7 +65,7 @@ export default defineUserConfig({
 			},
 			{
 				text: "Fundamentele React",
-				collapsible: false,
+				collapsible: true,
 				children: [
 					{
 						text: "Istoria creării React",
@@ -114,7 +142,7 @@ export default defineUserConfig({
 			// options
 		}),
 		googleAnalyticsPlugin({
-			id: 'G-XXXXXXXXXX',
+			id: "G-9ZM8VVKLTR",
 		}),
 	],
 

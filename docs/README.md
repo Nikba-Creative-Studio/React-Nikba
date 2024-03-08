@@ -4,11 +4,11 @@ title: Home
 heroImage: ./react.svg
 actions:
   - text: Începe acum →
-    link: /get-started.html
+    link: /base/history.html
     type: primary
 
   - text: Introducere →
-    link: /introduction.html
+    link: /introduction/introduction.html
     type: secondary
 
 features:
