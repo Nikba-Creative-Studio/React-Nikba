@@ -4,10 +4,10 @@
 set -e
 
 # build
-npm run build
+npm run docs:build
 
 # navigate into the build output directory
-cd src/.vuepress/dist
+cd docs/.vuepress/dist
 
 # if you are deploying to a custom domain
 echo 'react.md' > CNAME
