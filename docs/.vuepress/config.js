@@ -8,6 +8,7 @@ import { catalogPlugin } from "@vuepress/plugin-catalog";
 import { sitemapPlugin } from "@vuepress/plugin-sitemap";
 import { seoPlugin } from "@vuepress/plugin-seo";
 import { pwaPlugin } from "@vuepress/plugin-pwa";
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 export default defineUserConfig({
 	lang: "ro-RO",
@@ -111,6 +112,9 @@ export default defineUserConfig({
 		}),
 		pwaPlugin({
 			// options
+		}),
+		googleAnalyticsPlugin({
+			id: 'G-XXXXXXXXXX',
 		}),
 	],
 
