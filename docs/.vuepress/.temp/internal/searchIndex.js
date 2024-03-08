@@ -14,6 +14,71 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Introducere în curs",
+    "headers": [],
+    "path": "/guide/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Using Vue in Markdown",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Browser API Access Restrictions",
+        "slug": "browser-api-access-restrictions",
+        "link": "#browser-api-access-restrictions",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "",
+        "slug": "",
+        "link": "#",
+        "children": []
+      }
+    ],
+    "path": "/guide/using-vue.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Introducere în curs",
+    "headers": [],
+    "path": "/introduction/introduction.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Programul cursului",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Modulul 1. React și Redux",
+        "slug": "modulul-1-react-si-redux",
+        "link": "#modulul-1-react-si-redux",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Modulul 2. Rutare, securitate și TypeScript",
+        "slug": "modulul-2-rutare-securitate-si-typescript",
+        "link": "#modulul-2-rutare-securitate-si-typescript",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Modulul 3. Protocolul WebSocket și deployment-ul aplicației",
+        "slug": "modulul-3-protocolul-websocket-si-deployment-ul-aplicatiei",
+        "link": "#modulul-3-protocolul-websocket-si-deployment-ul-aplicatiei",
+        "children": []
+      }
+    ],
+    "path": "/introduction/program.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Utilizarea avansată a JSX. React.Children",
     "headers": [
       {
@@ -259,71 +324,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Introducere în curs",
-    "headers": [],
-    "path": "/guide/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Using Vue in Markdown",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Browser API Access Restrictions",
-        "slug": "browser-api-access-restrictions",
-        "link": "#browser-api-access-restrictions",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "",
-        "slug": "",
-        "link": "#",
-        "children": []
-      }
-    ],
-    "path": "/guide/using-vue.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Introducere în curs",
-    "headers": [],
-    "path": "/introduction/introduction.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Programul cursului",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Modulul 1. React și Redux",
-        "slug": "modulul-1-react-si-redux",
-        "link": "#modulul-1-react-si-redux",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Modulul 2. Rutare, securitate și TypeScript",
-        "slug": "modulul-2-rutare-securitate-si-typescript",
-        "link": "#modulul-2-rutare-securitate-si-typescript",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Modulul 3. Protocolul WebSocket și deployment-ul aplicației",
-        "slug": "modulul-3-protocolul-websocket-si-deployment-ul-aplicatiei",
-        "link": "#modulul-3-protocolul-websocket-si-deployment-ul-aplicatiei",
-        "children": []
-      }
-    ],
-    "path": "/introduction/program.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "",
     "headers": [],
     "path": "/404.html",
@@ -331,16 +331,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Base",
+    "title": "Introduction",
     "headers": [],
-    "path": "/base/",
+    "path": "/introduction/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "Introduction",
+    "title": "Base",
     "headers": [],
-    "path": "/introduction/",
+    "path": "/base/",
     "pathLocale": "/",
     "extraFields": []
   }

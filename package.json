@@ -15,6 +15,7 @@
     "@vuepress/plugin-catalog": "^2.0.0-rc.18",
     "@vuepress/plugin-copy-code": "^2.0.0-rc.18",
     "@vuepress/plugin-docsearch": "^2.0.0-rc.18",
+    "@vuepress/plugin-pwa": "^2.0.0-rc.18",
     "@vuepress/plugin-search": "^2.0.0-rc.18",
     "@vuepress/plugin-seo": "^2.0.0-rc.18",
     "@vuepress/plugin-shiki": "^2.0.0-rc.18",

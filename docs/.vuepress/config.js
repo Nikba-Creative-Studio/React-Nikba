@@ -2,11 +2,12 @@ import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress/cli";
 import { viteBundler } from "@vuepress/bundler-vite";
 
-import { copyCodePlugin } from '@vuepress/plugin-copy-code'
-import { searchPlugin } from '@vuepress/plugin-search'
-import { catalogPlugin } from '@vuepress/plugin-catalog'
-import { sitemapPlugin } from '@vuepress/plugin-sitemap'
-import { seoPlugin } from '@vuepress/plugin-seo'
+import { copyCodePlugin } from "@vuepress/plugin-copy-code";
+import { searchPlugin } from "@vuepress/plugin-search";
+import { catalogPlugin } from "@vuepress/plugin-catalog";
+import { sitemapPlugin } from "@vuepress/plugin-sitemap";
+import { seoPlugin } from "@vuepress/plugin-seo";
+import { pwaPlugin } from "@vuepress/plugin-pwa";
 
 export default defineUserConfig({
 	lang: "ro-RO",
@@ -14,7 +15,7 @@ export default defineUserConfig({
 	title: "React.js - Curs de Dezvoltare",
 	description:
 		"Vă veți pune bazele învățării React. Veți stăpâni toate instrumentele de bază de depanare și dezvoltare care fac parte din bibliotecă, veți crea scheletul aplicației și veți pregăti toate componentele de design.",
-
+	shouldPrefetch: false,
 	theme: defaultTheme({
 		logo: "./react.svg",
 		navbar: ["/", "/get-started"],
@@ -86,30 +87,32 @@ export default defineUserConfig({
 		],
 	}),
 
-  plugins: [
-    copyCodePlugin({
-      locales: {
-        '/': {
-          copy: 'Copiază',
-          copied: 'Copiat!',
-        }
-      }
-    }),
-    searchPlugin({
-      // options
-    }),
-    catalogPlugin({
-      // Your options
-    }),
-    sitemapPlugin({
-      // options
-      
-    }),
-    seoPlugin({
-      // options
-      hostname: 'https://react.md'
-    }),
-  ],
+	plugins: [
+		copyCodePlugin({
+			locales: {
+				"/": {
+					copy: "Copiază",
+					copied: "Copiat!",
+				},
+			},
+		}),
+		searchPlugin({
+			// options
+		}),
+		catalogPlugin({
+			// Your options
+		}),
+		sitemapPlugin({
+			// options
+		}),
+		seoPlugin({
+			// options
+			hostname: "https://react.md",
+		}),
+		pwaPlugin({
+			// options
+		}),
+	],
 
 	bundler: viteBundler(),
 });
