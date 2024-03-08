@@ -16,6 +16,8 @@ export default defineUserConfig({
 	description:
 		"Vă veți pune bazele învățării React. Veți stăpâni toate instrumentele de bază de depanare și dezvoltare care fac parte din bibliotecă, veți crea scheletul aplicației și veți pregăti toate componentele de design.",
 	shouldPrefetch: false,
+
+	base: '/',
 	
 	head: [
 		["meta", { name: "theme-color", content: "#3eaf7c" }],
@@ -39,6 +41,11 @@ export default defineUserConfig({
 	
 	theme: defaultTheme({
 		logo: "./react.svg",
+		docsDir: 'docs',
+		hostname: 'https://react.md',
+		repo: 'Nikba-Creative-Studio/React-Nikba',
+		docsBranch: 'main',
+		docsRepo: 'Nikba-Creative-Studio/React-Nikba',
 		navbar: [
 			{
 				text: 'Principală',
@@ -57,6 +64,7 @@ export default defineUserConfig({
 			"/": {
 				lastUpdatedText: "Ultima actualizare",
 				contributorsText: "Contribuitori",
+				editLinkText: "Editează această pagină pe GitHub",
 			},
 		},
 
@@ -67,64 +75,25 @@ export default defineUserConfig({
 				text: "Parte introductivă",
 				collapsible: true,
 				children: [
-					{
-						text: "Introducere în curs",
-						link: "/introduction/introduction",
-					},
-					{
-						text: "Programul cursului",
-						link: "/introduction/program",
-					},
+					'/introduction/introduction',
+					'/introduction/program',
 				],
 			},
 			{
 				text: "Fundamentele React",
 				collapsible: true,
 				children: [
-					{
-						text: "Istoria creării React",
-						link: "/base/history",
-					},
-					{
-						text: "Conectarea React",
-						link: "/base/connect",
-					},
-					{
-						text: "Rendering în React",
-						link: "/base/render",
-					},
-					{
-						text: "Virtual DOM",
-						link: "/base/virtualdom",
-					},
-					{
-						text: "Ce este JSX",
-						link: "/base/jsx",
-					},
-					{
-						text: "Decompunerea UI",
-						link: "/base/decomposition",
-					},
-					{
-						text: "Componente în React",
-						link: "/base/components",
-					},
-					{
-						text: "Compoziția și extragerea componentelor în React",
-						link: "/base/composition",
-					},
-					{
-						text: "Utilizare avansată a props-urilor",
-						link: "/base/props",
-					},
-					{
-						text: "Descompunerea props-urilor",
-						link: "/base/decompositionprops",
-					},
-					{
-						text: "Utilizarea avansată a JSX. React.Children",
-						link: "/base/advancedjsx",
-					},
+					'/base/history',
+					'/base/connect',
+					'/base/render',
+					'/base/virtualdom',
+					'/base/jsx',
+					'/base/decomposition',
+					'/base/components',
+					'/base/composition',
+					'/base/props',
+					'/base/decompositionprops',
+					'/base/advancedjsx',
 				],
 			},
 		],
