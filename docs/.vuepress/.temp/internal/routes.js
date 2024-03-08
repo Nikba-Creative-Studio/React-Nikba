@@ -19,8 +19,6 @@ export const routes = Object.fromEntries([
   ["/introduction/introduction.html", { loader: () => import(/* webpackChunkName: "introduction.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/introduction/introduction.html.js"), meta: {"title":"Introducere în curs"} }],
   ["/introduction/program.html", { loader: () => import(/* webpackChunkName: "program.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/introduction/program.html.js"), meta: {"title":"Programul cursului"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
-  ["/base/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/base/index.html.js"), meta: {"title":"Base"} }],
-  ["/introduction/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/introduction/index.html.js"), meta: {"title":"Introduction"} }],
 ]);
 
 if (import.meta.webpackHot) {

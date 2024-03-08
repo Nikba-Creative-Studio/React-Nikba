@@ -329,20 +329,6 @@ export const searchIndex = [
     "path": "/404.html",
     "pathLocale": "/",
     "extraFields": []
-  },
-  {
-    "title": "Base",
-    "headers": [],
-    "path": "/base/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Introduction",
-    "headers": [],
-    "path": "/introduction/",
-    "pathLocale": "/",
-    "extraFields": []
   }
 ]
 

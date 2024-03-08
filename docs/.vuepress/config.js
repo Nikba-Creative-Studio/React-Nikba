@@ -4,7 +4,6 @@ import { viteBundler } from "@vuepress/bundler-vite";
 
 import { copyCodePlugin } from "@vuepress/plugin-copy-code";
 import { searchPlugin } from "@vuepress/plugin-search";
-import { catalogPlugin } from "@vuepress/plugin-catalog";
 import { sitemapPlugin } from "@vuepress/plugin-sitemap";
 import { seoPlugin } from "@vuepress/plugin-seo";
 import { pwaPlugin } from "@vuepress/plugin-pwa";
@@ -40,13 +39,28 @@ export default defineUserConfig({
 	
 	theme: defaultTheme({
 		logo: "./react.svg",
-		navbar: ["/", "/get-started"],
+		navbar: [
+			{
+				text: 'Principală',
+				link: '/',
+			},
+			{
+				text: 'Introducere',
+				link: '/introduction/introduction',
+			},
+			{
+				text: 'Curs React.js',
+				link: '/base/history',
+			},
+		],
 		locales: {
 			"/": {
 				lastUpdatedText: "Ultima actualizare",
 				contributorsText: "Contribuitori",
 			},
 		},
+
+		sidebarDepth: 2,
 
 		sidebar: [
 			{
@@ -116,6 +130,8 @@ export default defineUserConfig({
 		],
 	}),
 
+	
+
 	plugins: [
 		copyCodePlugin({
 			locales: {
@@ -128,9 +144,7 @@ export default defineUserConfig({
 		searchPlugin({
 			// options
 		}),
-		catalogPlugin({
-			// Your options
-		}),
+
 		sitemapPlugin({
 			// options
 		}),
