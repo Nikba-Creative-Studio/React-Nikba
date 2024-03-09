@@ -9,9 +9,9 @@ lang: ro-RO
 
 Știți deja că React este o bibliotecă creată pe JavaScript. Orice bibliotecă poate fi adăugată la o pagină HTML pentru a utiliza funcționalitatea sa.
 
-Vom conecta două biblioteci: <mark>react</mark> și <mark>react-dom</mark>. Biblioteca principală react este universală și destinată nu doar proiectelor web, iar <mark>react-dom</mark> este responsabil exclusiv pentru interacțiunea cu DOM. Când lucrăm cu o aplicație de browser, avem nevoie de ambele biblioteci.
+Vom conecta două biblioteci: `react` și `react-dom`. Biblioteca principală react este universală și destinată nu doar proiectelor web, iar `react-dom` este responsabil exclusiv pentru interacțiunea cu DOM. Când lucrăm cu o aplicație de browser, avem nevoie de ambele biblioteci.
 
-Conectăm <mark>react</mark> și <mark>react-dom</mark> la o pagină HTML:
+Conectăm `react` și `react-dom` la o pagină HTML:
 
 ```html
 <!DOCTYPE html>
@@ -29,7 +29,7 @@ Conectăm <mark>react</mark> și <mark>react-dom</mark> la o pagină HTML:
 </html>
 ```
 
-Am folosit versiunile bibliotecilor cu extensia <mark>.development.js</mark>. Acestea conțin instrumente suplimentare pentru depanarea codului în React.
+Am folosit versiunile bibliotecilor cu extensia `.development.js`. Acestea conțin instrumente suplimentare pentru depanarea codului în React.
 
 Pentru a începe lucrul cu biblioteca React, trebuie să adăugați un „punct de intrare” sau „nod rădăcină”.
 
@@ -83,16 +83,16 @@ Sunteți deja pregătiți să scrieți prima aplicație pe React. Pentru aceasta
 </html>
 ```
 
-Deschideți acest fișier în browser, veți vedea un titlu <mark>h1</mark> cu textul „Salut, lume!”.
+Deschideți acest fișier în browser, veți vedea un titlu `h1` cu textul „Salut, lume!”.
 
 Acest cod este unul dintre cele mai simple exemple de utilizare a React.
 
-Orice aplicație React începe cu crearea rădăcinii. Pentru aceasta, folosim <mark>ReactDOM.createRoot</mark> și ca prim argument îi pasăm indicatorul la elementul DOM în care vom afișa interfața noastră.
+Orice aplicație React începe cu crearea rădăcinii. Pentru aceasta, folosim `ReactDOM.createRoot` și ca prim argument îi pasăm indicatorul la elementul DOM în care vom afișa interfața noastră.
 
 După aceea, putem apela metoda rădăcinii render.
 
 Aceasta primește JSX, îl procesează și afișează rezultatul în DOM.
 
-Procesul de apariție a marcajului HTML pe pagină se numește rendering (din engleză <mark>„render”</mark> - „a reprezenta”).
+Procesul de apariție a marcajului HTML pe pagină se numește rendering (din engleză `„render”` - „a reprezenta”).
 
 În lecțiile următoare, vom vorbi mai detaliat despre rendering și capacitatea React de a gestiona marcajul care ajunge în nodul rădăcină.

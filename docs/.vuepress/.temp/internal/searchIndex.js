@@ -29,6 +29,35 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Componente de clasă în detalii",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Constructorul componentei: constructor(props)",
+        "slug": "constructorul-componentei-constructor-props",
+        "link": "#constructorul-componentei-constructor-props",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Prop-uri implicite: defaultProps",
+        "slug": "prop-uri-implicite-defaultprops",
+        "link": "#prop-uri-implicite-defaultprops",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Control manual al randării: forceUpdate()",
+        "slug": "control-manual-al-randarii-forceupdate",
+        "link": "#control-manual-al-randarii-forceupdate",
+        "children": []
+      }
+    ],
+    "path": "/base/classcomponent.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Componente în React",
     "headers": [
       {
@@ -120,9 +149,9 @@ export const searchIndex = [
       },
       {
         "level": 2,
-        "title": "Biblioteci și cadre",
-        "slug": "biblioteci-si-cadre",
-        "link": "#biblioteci-si-cadre",
+        "title": "Biblioteci și frameworks",
+        "slug": "biblioteci-si-frameworks",
+        "link": "#biblioteci-si-frameworks",
         "children": []
       },
       {
@@ -195,6 +224,57 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Ciclul de viață al componentelor",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Ce este ciclul de viață",
+        "slug": "ce-este-ciclul-de-viata",
+        "link": "#ce-este-ciclul-de-viata",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Montarea: componentDidMount",
+        "slug": "montarea-componentdidmount",
+        "link": "#montarea-componentdidmount",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Actualizarea: componentDidUpdate",
+        "slug": "actualizarea-componentdidupdate",
+        "link": "#actualizarea-componentdidupdate",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Demontarea: componentWillUnmount",
+        "slug": "demontarea-componentwillunmount",
+        "link": "#demontarea-componentwillunmount",
+        "children": []
+      }
+    ],
+    "path": "/base/lifecycle.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Liste în React. Proprietatea key",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Proprietatea key",
+        "slug": "proprietatea-key",
+        "link": "#proprietatea-key",
+        "children": []
+      }
+    ],
+    "path": "/base/lists.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Utilizare avansată a props-urilor",
     "headers": [
       {
@@ -245,9 +325,103 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "PropTypes - Verificarea tipurilor",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Verificarea tipurilor cu ajutorul PropTypes",
+        "slug": "verificarea-tipurilor-cu-ajutorul-proptypes",
+        "link": "#verificarea-tipurilor-cu-ajutorul-proptypes",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Validatorii PropTypes",
+        "slug": "validatorii-proptypes",
+        "link": "#validatorii-proptypes",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Limitarea la un singur component copil",
+        "slug": "limitarea-la-un-singur-component-copil",
+        "link": "#limitarea-la-un-singur-component-copil",
+        "children": []
+      }
+    ],
+    "path": "/base/proptypes.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Rendering în React",
     "headers": [],
     "path": "/base/render.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Starea internă a componentelor",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Ce este starea internă",
+        "slug": "ce-este-starea-interna",
+        "link": "#ce-este-starea-interna",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Starea în componentele React",
+        "slug": "starea-in-componentele-react",
+        "link": "#starea-in-componentele-react",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Ierarhia și forma stării în componentele React",
+        "slug": "ierarhia-si-forma-starii-in-componentele-react",
+        "link": "#ierarhia-si-forma-starii-in-componentele-react",
+        "children": []
+      }
+    ],
+    "path": "/base/state.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Ridicarea stării",
+    "headers": [],
+    "path": "/base/stateup.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Cum să modifici starea în componentele React",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Caracteristicile metodei setState",
+        "slug": "caracteristicile-metodei-setstate",
+        "link": "#caracteristicile-metodei-setstate",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Utilizarea state împreună cu props",
+        "slug": "utilizarea-state-impreuna-cu-props",
+        "link": "#utilizarea-state-impreuna-cu-props",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Utilizarea setState pentru starea ierarhică",
+        "slug": "utilizarea-setstate-pentru-starea-ierarhica",
+        "link": "#utilizarea-setstate-pentru-starea-ierarhica",
+        "children": []
+      }
+    ],
+    "path": "/base/stateupdate.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -329,5 +503,25 @@ export const searchIndex = [
     "path": "/404.html",
     "pathLocale": "/",
     "extraFields": []
+  },
+  {
+    "title": "Concluzie",
+    "headers": [],
+    "path": "/base/conclusion.html",
+    "pathLocale": "/",
+    "extraFields": []
   }
 ]
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ searchIndex }) => {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  })
+}

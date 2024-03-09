@@ -9,9 +9,9 @@ lang: ro-RO
 
 Props-urile sunt, în esență, argumentele unei funcții care permit influențarea randării elementelor în interiorul componentelor și logica funcționării lor. Ca și un argument, un prop poate fi orice: o funcție, un obiect, un array, un șir de caractere, un număr.
 
-Știți deja că React, când lucrează cu componente, combină atributele JSX într-un singur obiect - <mark>props</mark>. 
+Știți deja că React, când lucrează cu componente, combină atributele JSX într-un singur obiect - `props`. 
 
-Într-o componentă de clasă, accesul la acest obiect se poate obține prin <mark>this.props</mark>, iar într-o componentă funcțională, <mark>props</mark> este disponibil ca primul argument al funcției:
+Într-o componentă de clasă, accesul la acest obiect se poate obține prin `this.props`, iar într-o componentă funcțională, `props` este disponibil ca primul argument al funcției:
 
 ```javascript
 function Heading(props) {
@@ -22,7 +22,7 @@ const root = ReactDOM.createRoot(document.querySelector('#root'));
 root.render(<Heading text="Titlul unui articol interesant" />);
 ```
 
-Ca nume al argumentului, este obișnuit să se folosească <mark>props</mark>. 
+Ca nume al argumentului, este obișnuit să se folosească `props`. 
 Recomandăm să numiți argumentul exact așa: acest lucru va simplifica percepția codului dvs. de către alți dezvoltatori, deoarece mulți dintre ei urmează și ei acest principiu.
 
 În lecția despre [compoziție și extragerea componentelor](/base/composition), ați văzut deja că pot exista mai multe props-uri și structura lor permite încorporarea:
@@ -43,12 +43,12 @@ const ShoppingCart = (props) => (
 );
 ```
 
-În acest exemplu, componenta <mark>ShoppingCart</mark> "randează" o altă componentă - <mark>Product</mark>. 
-Ca argumente (props-uri), i se transmite un obiect cu două valori: <mark>name</mark> și <mark>price</mark>.
+În acest exemplu, componenta `ShoppingCart` "randează" o altă componentă - `Product`. 
+Ca argumente (props-uri), i se transmite un obiect cu două valori: `name` și `price`.
 
 Pentru a face codul mai lizibil, ar trebui să simplificați structura props-urilor transmise componentei și să utilizați ca argumente primitive. Acest lucru nu va afecta performanța, deoarece React este foarte rapid, dar lucrul cu primitivele este mai simplu.
 
-Priviți exemplul în care <mark>props</mark> este un obiect complex:
+Priviți exemplul în care `props` este un obiect complex:
 
 ```javascript
 // Componentă
@@ -84,7 +84,7 @@ Din exemplu se vede că implementarea s-a simplificat, iar utilizarea componente
 
 Componentele React trebuie să se comporte ca funcții "pure" în raport cu props-urile lor, indiferent dacă sunt funcționale sau de clasă. Acest lucru înseamnă că componentele nu ar trebui să scrie ceva în props-urile lor. Să analizăm acest lucru pe exemplul funcțiilor "pure" și "impure".
 
-Funcția <mark>formatPrice</mark> este "pură", deoarece
+Funcția `formatPrice` este "pură", deoarece
 
  nu modifică datele de intrare și returnează în mod previzibil același rezultat pentru aceleași argumente:
 
@@ -94,7 +94,7 @@ function formatPrice(price) {
 }
 ```
 
-În schimb, funcția <mark>notificationSettings</mark> este "impură", deoarece scrie date în propriul său argument - obiectul <mark>user</mark>:
+În schimb, funcția `notificationSettings` este "impură", deoarece scrie date în propriul său argument - obiectul `user`:
 
 ```javascript
 function notificationSettings(user, notificationValue) {
@@ -109,13 +109,13 @@ Pentru ca dezvoltarea în React să rămână previzibilă și convenabilă, pro
 ## Expresii JavaScript ca props-uri
 
 Ca props-uri, puteți transmite orice expresii JavaScript.
- Pentru acest lucru, trebuie să le înconjurați cu <mark>{}</mark>. De exemplu, în acest JSX:
+ Pentru acest lucru, trebuie să le înconjurați cu `{}`. De exemplu, în acest JSX:
 
 ```javascript
 <MusicGenreItem genre={'rock' + '&' + 'roll'} />
 ```
 
-În componenta <mark>MusicGenreItem</mark>, valoarea <mark>props.genre</mark> va fi egală cu <mark>rock&roll</mark>, deoarece expresia <mark>'rock' + '&' + 'roll'</mark> va fi evaluată. Același lucru este valabil și pentru funcții:
+În componenta `MusicGenreItem`, valoarea `props.genre` va fi egală cu `rock&roll`, deoarece expresia `'rock' + '&' + 'roll'` va fi evaluată. Același lucru este valabil și pentru funcții:
 
 ```javascript
 function sayHi(name) {
@@ -125,9 +125,9 @@ function sayHi(name) {
 <WelcomeComponent textToRender={sayHi('Nicolai')} />
 ```
 
-În acest exemplu, în prop-ul <mark>textToRender</mark> va ajunge rezultatul executării funcției <mark>sayHi('Nicolai')</mark>, adică șirul <mark>"Salut, Nicolai!"</mark>.
+În acest exemplu, în prop-ul `textToRender` va ajunge rezultatul executării funcției `sayHi('Nicolai')`, adică șirul `"Salut, Nicolai!"`.
 
-Operatorii <mark>if</mark>, <mark>switch</mark> și ciclul <mark>for</mark> nu sunt expresii în JavaScript. Din acest motiv, nu pot fi aplicate direct în JSX. 
+Operatorii `if`, `switch` și ciclul `for` nu sunt expresii în JavaScript. Din acest motiv, nu pot fi aplicate direct în JSX. 
 Pentru a le utiliza, trebuie mai întâi să obțineți rezultatul lucrării acestor operatori, iar apoi acest rezultat să-l plasați în codul JSX:
 
 ```javascript
@@ -168,7 +168,7 @@ Dacă transmiteți un literal de șir de caractere într-o componentă, toate si
 ```
 
 ## Valorile implicite ale props-urilor sunt true
-Dacă se transmite o valoare într-un prop, implicit va fi <mark>true</mark>. 
+Dacă se transmite o valoare într-un prop, implicit va fi `true`. 
 Aceste două expresii JSX sunt echivalente:
 
 ```javascript
@@ -184,7 +184,7 @@ const title = "Autostop prin Moldova"
 { title }
 ```
 
-Această înregistrare este echivalentă cu obiectul <mark>{ title: "Autostop prin Moldova" }</mark>, dar cu siguranță nu cu obiectul <mark>{ title: true }</mark>.
+Această înregistrare este echivalentă cu obiectul `{ title: "Autostop prin Moldova" }`, dar cu siguranță nu cu obiectul `{ title: true }`.
 
 ## Atribute de extindere
 Structura încorporată a props-urilor este o situație frecventă, mai ales când lucrați cu
@@ -225,7 +225,7 @@ const LandingPage = () => {
 };
 ```
 
-În acest exemplu, în componenta <mark>Input</mark> sunt transmise următoarele props-uri:
+În acest exemplu, în componenta `Input` sunt transmise următoarele props-uri:
 
 ```javascript
 {
@@ -236,8 +236,8 @@ const LandingPage = () => {
 }
 ```
 
-În timp ce props-urile <mark>size</mark> și <mark>userId</mark> sunt folosite în siguranță și nu sunt transmise în elementul DOM <mark>&#60;input/&#62;</mark>. Prop-ul <mark>size</mark> este folosit intern pentru a calcula clasa, iar <mark>userId</mark> nu este folosit deloc. 
-Prin urmare, în obiectul <mark>otherProps</mark> rămân doar props-urile necesare elementului DOM - <mark>type</mark> și <mark>disabled</mark>.
+În timp ce props-urile `size` și `userId` sunt folosite în siguranță și nu sunt transmise în elementul DOM `&#60;input/&#62;`. Prop-ul `size` este folosit intern pentru a calcula clasa, iar `userId` nu este folosit deloc. 
+Prin urmare, în obiectul `otherProps` rămân doar props-urile necesare elementului DOM - `type` și `disabled`.
 
 Atributele de extindere pot fi utile și reduc codul, dar există riscul de a transmite props-uri suplimentare în componente sau atribute HTML nevalide în DOM. Utilizați acest instrument cu prudență.
 

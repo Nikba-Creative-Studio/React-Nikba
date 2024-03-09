@@ -35,7 +35,7 @@ const UserGreeting = props => {
 const UserGreeting = props => <h1>Bună ziua, {props.fullName}</h1>;
 ```
 
-Funcția din acest exemplu este o componentă React. Componenta primește props ca intrare și returnează un element React <mark>h1</mark>. Astfel de componente sunt numite componente funcționale, deoarece sunt funcții.
+Funcția din acest exemplu este o componentă React. Componenta primește props ca intrare și returnează un element React `h1`. Astfel de componente sunt numite componente funcționale, deoarece sunt funcții.
 
 Componentele pot fi declarate și în alt mod. Pentru aceasta, vom folosi clasele ES6:
 
@@ -51,7 +51,7 @@ Deci, care metodă este corectă? Ambele metode de declarare a componentelor sun
 
 ## Cum sunt renderizate componentele în React
 
-Marcajul din JSX în componente funcționale ajunge în DOM din expresia <mark>return</mark>:
+Marcajul din JSX în componente funcționale ajunge în DOM din expresia `return`:
 
 ```javascript
 function Heading(props) {
@@ -59,7 +59,7 @@ function Heading(props) {
 }
 ```
 
-Marcajul din componente de clasă ajunge în DOM din expresia <mark>return</mark>, care se află în interiorul metodei <mark>render</mark>:
+Marcajul din componente de clasă ajunge în DOM din expresia `return`, care se află în interiorul metodei `render`:
 
 ```javascript
 class Heading extends React.Component {
@@ -69,7 +69,7 @@ class Heading extends React.Component {
 }
 ```
 
-Renderizarea întregului arbore de elemente în majoritatea aplicațiilor pe React începe cu apelarea <mark>render</mark>. Primul argument este elementul care include toate celelalte componente. În cele din urmă, se obține o structură arborescentă din componente încorporate unele în altele.
+Renderizarea întregului arbore de elemente în majoritatea aplicațiilor pe React începe cu apelarea `render`. Primul argument este elementul care include toate celelalte componente. În cele din urmă, se obține o structură arborescentă din componente încorporate unele în altele.
 
 Pentru a nu vă încurca în concepte și a înțelege diferența dintre un element și o componentă, să examinăm definițiile lor:
 
@@ -114,7 +114,7 @@ const element = <RegistrationForm />;
 const anotherElement = <UserGreeting fullName="Dominick Cobb" />;
 ```
 
-Când React întâlnește un astfel de element, el colectează toate atributele JSX într-un singur obiect și le transmite componentei. Acest obiect se numește props (proprietăți). Obiectul props pentru componenta <mark>UserGreeting</mark> arată astfel:
+Când React întâlnește un astfel de element, el colectează toate atributele JSX într-un singur obiect și le transmite componentei. Acest obiect se numește props (proprietăți). Obiectul props pentru componenta `UserGreeting` arată astfel:
 
 ```javascript
 {
@@ -137,14 +137,14 @@ root.render(
 );
 ```
 
-Acest cod va afișa pe pagina fraza <mark>Bună ziua, Dominick Cobb</mark>.
+Acest cod va afișa pe pagina fraza `Bună ziua, Dominick Cobb`.
 
 Iată ce se întâmplă în cod:
 
-- Transmit elementul React <mark>&#60;UserGreeting fullName="Dominick Cobb" /&#62;</mark> în <mark>render()</mark>.
-- React apelează componenta <mark>UserGreeting</mark> cu props <mark>{fullName: 'Dominick Cobb'}</mark>.
-- Componenta <mark>UserGreeting</mark> returnează elementul <mark>&#60;h1&#62;Bună ziua, Dominick Cobb&#60;/h1&#62;</mark> ca rezultat.
-- React DOM își face treaba și plasează <mark>&#60;h1&#62; Bună ziua, Dominick Cobb&#60;/h1&#62;</mark> în DOM.
+- Transmit elementul React `&#60;UserGreeting fullName="Dominick Cobb" /&#62;` în `render()`.
+- React apelează componenta `UserGreeting` cu props `{fullName: 'Dominick Cobb'}`.
+- Componenta `UserGreeting` returnează elementul `&#60;h1&#62;Bună ziua, Dominick Cobb&#60;/h1&#62;` ca rezultat.
+- React DOM își face treaba și plasează `&#60;h1&#62; Bună ziua, Dominick Cobb&#60;/h1&#62;` în DOM.
 
 Numele componentelor trebuie să înceapă întotdeauna cu o literă mare. 
 
@@ -166,7 +166,7 @@ const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(element);
 ```
 
-Pentru ca React să recunoască corect componenta, trebuie să redenumim <mark>userGreeting</mark> în <mark>UserGreeting</mark>:
+Pentru ca React să recunoască corect componenta, trebuie să redenumim `userGreeting` în `UserGreeting`:
 
 ```javascript
 // Corect! Aceasta este o componentă și trebuie să fie scrisă cu literă mare:

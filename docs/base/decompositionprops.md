@@ -11,7 +11,7 @@ lang: ro-RO
 
 Pe măsură ce aplicația se dezvoltă, apare necesitatea de a adăuga noi props-uri în componente. La început unul, apoi altul, și înainte să vă dați seama, veți descoperi că componenta așteaptă o duzină de argumente.
 
-Priviți exemplul unei componente complexe <mark>OrderContent</mark>:
+Priviți exemplul unei componente complexe `OrderContent`:
 
 ```javascript
 // Exemplu prost
@@ -77,7 +77,7 @@ React nu limitează nici tipul props-urilor, nici numărul lor, dar nu ar trebui
 </OrderContent>
 ```
 
-În acest exemplu sunt multe componente, iar props-urile sunt împărțite în mod logic: tot ce este legat de adresa este transmis componentei <mark>Address</mark>, componenta <mark>Customer</mark> are, de asemenea, sarcina sa specifică, și așa mai departe. Un astfel de cod este ușor de întreținut, iar adăugarea de noi funcționalități nu pune în pericol funcționarea întregii aplicații.
+În acest exemplu sunt multe componente, iar props-urile sunt împărțite în mod logic: tot ce este legat de adresa este transmis componentei `Address`, componenta `Customer` are, de asemenea, sarcina sa specifică, și așa mai departe. Un astfel de cod este ușor de întreținut, iar adăugarea de noi funcționalități nu pune în pericol funcționarea întregii aplicații.
 
 Când numărul de props-uri devine prea mare - este un semn că ar trebui să aplicați descompunerea.
 

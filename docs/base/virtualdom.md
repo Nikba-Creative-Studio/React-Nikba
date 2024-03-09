@@ -56,14 +56,14 @@ Acest cod poate fi reprezentat într-o formă simplificată:
 }
 ```
 
-Aici este prezentată o structură arborescentă de obiecte. În ea, un obiect rădăcină <mark>"section"</mark> conține mai mulți copii - aceștia sunt indicați în <mark>children</mark>. Și elementele copil conțin, de asemenea, propriii <mark>children</mark>. Arborele de obiecte poate avea un număr enorm de niveluri de imbricare. Exact această structură este transmisă în funcția <mark>root.render</mark>, unde are loc magia Virtual DOM.
+Aici este prezentată o structură arborescentă de obiecte. În ea, un obiect rădăcină `"section"` conține mai mulți copii - aceștia sunt indicați în `children`. Și elementele copil conțin, de asemenea, propriii `children`. Arborele de obiecte poate avea un număr enorm de niveluri de imbricare. Exact această structură este transmisă în funcția `root.render`, unde are loc magia Virtual DOM.
 
 React folosește această structură de date pentru două scopuri:
 
-- Pe baza ei se construiesc și se inserează în pagină elementele DOM reale (cu ajutorul <mark>document.createElement</mark> și <mark>appendChild)</mark>, precum și se apelează renderizarea componentelor. Ca rezultat al renderizării componentelor, "arborele", și odată cu el și DOM-ul real, "cresc" cu ramuri suplimentare, a căror structură a fost descrisă în componente.
+- Pe baza ei se construiesc și se inserează în pagină elementele DOM reale (cu ajutorul `document.createElement` și `appendChild)`, precum și se apelează renderizarea componentelor. Ca rezultat al renderizării componentelor, "arborele", și odată cu el și DOM-ul real, "cresc" cu ramuri suplimentare, a căror structură a fost descrisă în componente.
 - React păstrează în ea Virtual DOM-ul (eng. Virtual DOM) - o copie virtuală a structurii curente a DOM-ului. La renderizările ulterioare, structura actualizată este comparată element cu element cu ultima copie salvată. Acest lucru permite React să determine numărul necesar de modificări și să le aplice în DOM-ul real.
 
-Această abordare a creării marcajului este mai complicată decât scrierea HTML în fișiere <mark>.html</mark>. Dar este necesară, deoarece majoritatea operațiunilor cu DOM-ul real sunt consumatoare de resurse pentru browser și dispozitivele utilizatorilor.
+Această abordare a creării marcajului este mai complicată decât scrierea HTML în fișiere `.html`. Dar este necesară, deoarece majoritatea operațiunilor cu DOM-ul real sunt consumatoare de resurse pentru browser și dispozitivele utilizatorilor.
 
 Algoritmul React, numit "reconciliation" (eng. "reconciliere"), reduce numărul acestor operațiuni la minimum. Compararea a două obiecte JavaScript chiar și complexe este mult mai rapidă decât operațiunile similare asupra arborelui DOM. Acest algoritm permite React să mențină o viteză de lucru ridicată în aplicații cu un număr mare de date în schimbare.
 

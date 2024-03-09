@@ -7,7 +7,7 @@ lang: ro-RO
 
 Din lecția anterioară, ați învățat cum să conectați React și să începeți să-l folosiți. Acum vă vom spune cum se realizează renderingul și cum marcajul din codul React ajunge în HTML.
 React în browser
-Am apelat deja funcția <mark>ReactDOM.render</mark>. Acesta este punctul de plecare pentru orice proiect web pe React. Să reamintim cum arată:
+Am apelat deja funcția `ReactDOM.render`. Acesta este punctul de plecare pentru orice proiect web pe React. Să reamintim cum arată:
 
 ```javascript
 const root = ReactDOM.createRoot(document.querySelector('#root'));
@@ -19,7 +19,7 @@ root.render(
 Funcția primește un singur argument - marcajul pe care dorim să-l plasăm în nodul rădăcină.
 
 Să analizăm mai detaliat acest lucru. 
-Este apelul unei alte funcții <mark>React.createElement</mark>, dar din biblioteca <mark>react</mark>. 
+Este apelul unei alte funcții `React.createElement`, dar din biblioteca `react`. 
 Ea este apelată cu trei argumente:
 
 - Numele tagului HTML rezultat.
@@ -27,7 +27,7 @@ Ea este apelată cu trei argumente:
 - Conținutul care va intra în tagul HTML. În acest caz, este șirul "Salut, React!". Conținutul poate fi nu doar text, ci și alte elemente.
 
 După al treilea argument pot urma și altele. 
-Toate vor fi adăugate unul după altul în interiorul elementului creat, ca și cum am folosi metoda <mark>appendChild</mark>. 
+Toate vor fi adăugate unul după altul în interiorul elementului creat, ca și cum am folosi metoda `appendChild`. 
 
 În lecțiile următoare, vom vorbi mai detaliat despre argumente și caracteristicile lor, precum și despre moștenirea și încorporarea elementelor.
 
@@ -76,7 +76,7 @@ function timer() {
 setInterval(timer, 1000);
 ```
 
-Acum, o dată pe secundă, va fi apelată funcția <mark>timer</mark>, a cărei sarcină este să redea arborele DOM din câteva noduri. 
+Acum, o dată pe secundă, va fi apelată funcția `timer`, a cărei sarcină este să redea arborele DOM din câteva noduri. 
 S-ar părea că toate elementele arborelui vor fi redate din nou, o dată pe secundă, dar nu este așa. 
 
 Iată ce se întâmplă de fapt:
@@ -90,12 +90,12 @@ Iată ce se întâmplă de fapt:
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-Doar elementul <mark>h2</mark>, care conține <mark>new Date().toLocaleTimeString()</mark>, este actualizat, iar restul elementelor arborelui nu sunt redesenate. ReactDOM compară elementul și arborele său copil cu versiunea anterioară și face în DOM doar schimbările necesare.
+Doar elementul `h2`, care conține `new Date().toLocaleTimeString()`, este actualizat, iar restul elementelor arborelui nu sunt redesenate. ReactDOM compară elementul și arborele său copil cu versiunea anterioară și face în DOM doar schimbările necesare.
 
 Elementele React sunt imuabile: după crearea unui element, nu este posibil să-i schimbați descendenții sau atributele. Imutabilitatea permite doar recrearea elementelor, ceea ce ajută la eliminarea multor erori care apar în crearea interfețelor utilizator. În React, un element poate fi considerat ca un cadru de film: reflectă starea interfeței la un moment dat. În cadrul acestui curs, veți întâlni de mai multe ori imutabilitatea.
 
-Deja cunoașteți o modalitate de a actualiza interfața - creând un nou element prin <mark>render</mark>. 
-În practică, majoritatea aplicațiilor scrise în React apelează <mark>render</mark> doar o dată - la inițializare.
+Deja cunoașteți o modalitate de a actualiza interfața - creând un nou element prin `render`. 
+În practică, majoritatea aplicațiilor scrise în React apelează `render` doar o dată - la inițializare.
 
 În acest curs, veți învăța și alte modalități de a influența interfața.
 

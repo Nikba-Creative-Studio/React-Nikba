@@ -102,7 +102,7 @@ root.render(<ProducerParty />);
 
 Încercați să împărțiți aplicația în părți. Astfel, va fi mai ușor de întreținut și dezvoltat.
 
-Să presupunem că lucrăm la o anumită componentă <mark>Order</mark>:
+Să presupunem că lucrăm la o anumită componentă `Order`:
 
 ```javascript
 function Order(props) {
@@ -152,7 +152,7 @@ function CustomerPicture(props) {
 }
 ```
 
-După această îmbunătățire, codul componentei <mark>Order</mark> arată astfel:
+După această îmbunătățire, codul componentei `Order` arată astfel:
 
 ```javascript
 function Order(props) {
@@ -169,7 +169,7 @@ function Order(props) {
 }
 ```
 
-Lucrul cu componenta <mark>Order</mark> a devenit mai convenabil, dar numele utilizatorului încă se obține din obiectul încorporat <mark>props</mark>. Să încercăm să simplificăm și mai mult <mark>Order</mark>. Pentru aceasta, vom combina informațiile despre cumpărător într-o singură componentă:
+Lucrul cu componenta `Order` a devenit mai convenabil, dar numele utilizatorului încă se obține din obiectul încorporat `props`. Să încercăm să simplificăm și mai mult `Order`. Pentru aceasta, vom combina informațiile despre cumpărător într-o singură componentă:
 
 ```javascript
 function CustomerInfo(props) {
@@ -183,7 +183,7 @@ function CustomerInfo(props) {
 }
 ```
 
-A ieșit excelent! Acum componenta <mark>Order</mark> arată astfel:
+A ieșit excelent! Acum componenta `Order` arată astfel:
 
 ```javascript
 function Order(props) {
@@ -197,13 +197,13 @@ function Order(props) {
 }
 ```
 
-În acest exemplu, am separat o unitate de date independentă din props și am creat pentru ea o componentă autonomă <mark>CustomerInfo</mark>.
+În acest exemplu, am separat o unitate de date independentă din props și am creat pentru ea o componentă autonomă `CustomerInfo`.
 
 Ar trebui să împărțiți componentele în componente mai mici dacă:
 
-- aceeași funcționalitate este utilizată de mai multe ori: de exemplu, <mark>Modal</mark>, <mark>Button</mark>, <mark>Avatar</mark>;
+- aceeași funcționalitate este utilizată de mai multe ori: de exemplu, `Modal`, `Button`, `Avatar`;
 - funcționalitatea componentei este complexă în sine: coșul de cumpărături și filtrele într-un magazin online, fluxul de știri în rețelele sociale.
 
-În aplicațiile mari, este necesar să aveți un set de componente care sunt folosite de mai multe ori. Acest lucru permite reducerea timpului de dezvoltare, întreținere și actualizare a aplicației. În plus, atunci când actualizați o componentă care este utilizată de mai multe ori, cum ar fi <mark>Button</mark>, puteți fi siguri că <mark>Button</mark> se va schimba în toate locurile unde este folosită.
+În aplicațiile mari, este necesar să aveți un set de componente care sunt folosite de mai multe ori. Acest lucru permite reducerea timpului de dezvoltare, întreținere și actualizare a aplicației. În plus, atunci când actualizați o componentă care este utilizată de mai multe ori, cum ar fi `Button`, puteți fi siguri că `Button` se va schimba în toate locurile unde este folosită.
 
 În această lecție, ați învățat să combinați componentele React între ele și să uniți în componente blocurile de interfață cu sens comun. În cadrul acestui curs, veți crea multe componente diferite și veți afla despre posibilitățile lor de interacțiune. În lecția următoare, vom analiza mai detaliat lucrul cu props.

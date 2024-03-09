@@ -1,14 +1,14 @@
 <template><div><h1 id="rendering-in-react" tabindex="-1"><a class="header-anchor" href="#rendering-in-react"><span>Rendering în React</span></a></h1>
 <p>Din lecția anterioară, ați învățat cum să conectați React și să începeți să-l folosiți. Acum vă vom spune cum se realizează renderingul și cum marcajul din codul React ajunge în HTML.
 React în browser
-Am apelat deja funcția <mark>ReactDOM.render</mark>. Acesta este punctul de plecare pentru orice proiect web pe React. Să reamintim cum arată:</p>
+Am apelat deja funcția <code v-pre>ReactDOM.render</code>. Acesta este punctul de plecare pentru orice proiect web pe React. Să reamintim cum arată:</p>
 <div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> root <span class="token operator">=</span> ReactDOM<span class="token punctuation">.</span><span class="token function">createRoot</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#root'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 root<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
   React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"h1"</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">"Salut, React!"</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Funcția primește un singur argument - marcajul pe care dorim să-l plasăm în nodul rădăcină.</p>
 <p>Să analizăm mai detaliat acest lucru.
-Este apelul unei alte funcții <mark>React.createElement</mark>, dar din biblioteca <mark>react</mark>.
+Este apelul unei alte funcții <code v-pre>React.createElement</code>, dar din biblioteca <code v-pre>react</code>.
 Ea este apelată cu trei argumente:</p>
 <ul>
 <li>Numele tagului HTML rezultat.</li>
@@ -16,7 +16,7 @@ Ea este apelată cu trei argumente:</p>
 <li>Conținutul care va intra în tagul HTML. În acest caz, este șirul &quot;Salut, React!&quot;. Conținutul poate fi nu doar text, ci și alte elemente.</li>
 </ul>
 <p>După al treilea argument pot urma și altele.
-Toate vor fi adăugate unul după altul în interiorul elementului creat, ca și cum am folosi metoda <mark>appendChild</mark>.</p>
+Toate vor fi adăugate unul după altul în interiorul elementului creat, ca și cum am folosi metoda <code v-pre>appendChild</code>.</p>
 <p>În lecțiile următoare, vom vorbi mai detaliat despre argumente și caracteristicile lor, precum și despre moștenirea și încorporarea elementelor.</p>
 <p>Dar să examinăm un exemplu:</p>
 <div class="language-javascript line-numbers-mode" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> root <span class="token operator">=</span> ReactDOM<span class="token punctuation">.</span><span class="token function">createRoot</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#root'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -49,7 +49,7 @@ root<span class="token punctuation">.</span><span class="token function">render<
 <span class="token punctuation">}</span>
 
 <span class="token function">setInterval</span><span class="token punctuation">(</span>timer<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Acum, o dată pe secundă, va fi apelată funcția <mark>timer</mark>, a cărei sarcină este să redea arborele DOM din câteva noduri.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Acum, o dată pe secundă, va fi apelată funcția <code v-pre>timer</code>, a cărei sarcină este să redea arborele DOM din câteva noduri.
 S-ar părea că toate elementele arborelui vor fi redate din nou, o dată pe secundă, dar nu este așa.</p>
 <p>Iată ce se întâmplă de fapt:</p>
 <p><img src="@source/img/render.gif" alt="React Render"></p>
@@ -59,10 +59,10 @@ S-ar părea că toate elementele arborelui vor fi redate din nou, o dată pe sec
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
-<p>Doar elementul <mark>h2</mark>, care conține <mark>new Date().toLocaleTimeString()</mark>, este actualizat, iar restul elementelor arborelui nu sunt redesenate. ReactDOM compară elementul și arborele său copil cu versiunea anterioară și face în DOM doar schimbările necesare.</p>
+<p>Doar elementul <code v-pre>h2</code>, care conține <code v-pre>new Date().toLocaleTimeString()</code>, este actualizat, iar restul elementelor arborelui nu sunt redesenate. ReactDOM compară elementul și arborele său copil cu versiunea anterioară și face în DOM doar schimbările necesare.</p>
 <p>Elementele React sunt imuabile: după crearea unui element, nu este posibil să-i schimbați descendenții sau atributele. Imutabilitatea permite doar recrearea elementelor, ceea ce ajută la eliminarea multor erori care apar în crearea interfețelor utilizator. În React, un element poate fi considerat ca un cadru de film: reflectă starea interfeței la un moment dat. În cadrul acestui curs, veți întâlni de mai multe ori imutabilitatea.</p>
-<p>Deja cunoașteți o modalitate de a actualiza interfața - creând un nou element prin <mark>render</mark>.
-În practică, majoritatea aplicațiilor scrise în React apelează <mark>render</mark> doar o dată - la inițializare.</p>
+<p>Deja cunoașteți o modalitate de a actualiza interfața - creând un nou element prin <code v-pre>render</code>.
+În practică, majoritatea aplicațiilor scrise în React apelează <code v-pre>render</code> doar o dată - la inițializare.</p>
 <p>În acest curs, veți învăța și alte modalități de a influența interfața.</p>
 <p>În lecția următoare, vom vorbi despre mecanismul care permite actualizarea doar a elementului HTML schimbat - VirtualDOM.</p>
 </div></template>

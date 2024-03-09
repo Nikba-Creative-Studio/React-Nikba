@@ -5,11 +5,11 @@ lang: ro-RO
 
 # Cunoașterea JSX
 
-În lecțiile anterioare, v-ați familiarizat în detaliu cu funcția <mark>React.createElement</mark>. Dar când codul conține multe componente încorporate, devine greu de citit.
+În lecțiile anterioare, v-ați familiarizat în detaliu cu funcția `React.createElement`. Dar când codul conține multe componente încorporate, devine greu de citit.
 
 Și, în general, acest mod de descriere a interfeței seamănă mai mult cu o abordare imperativă. Și cum vă amintiți, React este renumit pentru declarativitatea sa. În această lecție, vom examina metoda obișnuită de a descrie interfețele în mod declarativ folosind JSX.
 
-JSX este o extensie a limbajului JavaScript. Cu ajutorul <mark>babel</mark>, este transformat în JavaScript standard. În versiunea online a <mark>babel</mark>, puteți vedea clar cum se fac astfel de modificări. Iată cum poate fi reprezentat:
+JSX este o extensie a limbajului JavaScript. Cu ajutorul `babel`, este transformat în JavaScript standard. În versiunea online a `babel`, puteți vedea clar cum se fac astfel de modificări. Iată cum poate fi reprezentat:
 
 ## Paranteze
 
@@ -22,7 +22,7 @@ root.render(<p>Mănâncă și mai multe dintre aceste chifle moi franțuzești, 
 
 ## Încorporarea expresiilor
 
-În exemplu, declarăm o variabilă <mark>folderName</mark> și o folosim în JSX, încadrând-o în acolade:
+În exemplu, declarăm o variabilă `folderName` și o folosim în JSX, încadrând-o în acolade:
 
 ```javascript
 const folderName = "Dosarul tuturor dosarelor";
@@ -51,12 +51,12 @@ root.render(
 );
 ```
 
-Proprietatea elementului din acest exemplu este constanta <mark>onlyGoodNewsClassName</mark>. 
+Proprietatea elementului din acest exemplu este constanta `onlyGoodNewsClassName`. 
 Utilizarea acestor funcționalități este limitată, în mare parte, doar de imaginația dezvoltatorului.
 
 JSX permite și apelarea funcțiilor în cadrul marcajului. 
 
-Astfel de funcții trebuie să returneze marcaj sau <mark>null</mark> și să fie sincrone:
+Astfel de funcții trebuie să returneze marcaj sau `null` și să fie sincrone:
 
 ```javascript
 const renderAddress = (street, house) => {
@@ -79,7 +79,7 @@ root.render(
 
 ## Fragmentele
 
-Uneori, în JSX se folosește eticheta <mark><React.Fragment>...</React.Fragment></mark> sau varianta sa mai concisă <mark><>...</></mark>.
+Uneori, în JSX se folosește eticheta `<React.Fragment>...</React.Fragment>` sau varianta sa mai concisă `<>...</>`.
 
 Aceasta este așa-numitul "fragment" în React:
 
@@ -95,19 +95,19 @@ root.render(
 
 Regula este că un bloc de cod JSX trebuie să conțină doar un singur element de nivel superior. 
 
-În exemplu, sunt folosite două elemente adiacente: <mark>#myElement</mark> și <mark>#myAnotherElement</mark>.
+În exemplu, sunt folosite două elemente adiacente: `#myElement` și `#myAnotherElement`.
 
 Pentru ca codul JSX să funcționeze corect, "învelim" aceste două elemente într-un fragment.
-Fragmentele nu au funcționalitate suplimentară și pot fi percepute ca paranteze „încadrante” în codul JSX. În locul lor, se putea folosi un <mark>&#60;div&#62;</mark> obișnuit, dar acest lucru ar crea elemente inutile în DOM - o risipă inutilă de resurse, care poate provoca dificultăți suplimentare în stilizare.
+Fragmentele nu au funcționalitate suplimentară și pot fi percepute ca paranteze „încadrante” în codul JSX. În locul lor, se putea folosi un `&#60;div&#62;` obișnuit, dar acest lucru ar crea elemente inutile în DOM - o risipă inutilă de resurse, care poate provoca dificultăți suplimentare în stilizare.
 
 
 ## Logica condițională
 
 Una dintre cele mai frecvente sarcini în construirea unei interfețe dinamice (și în general în programare) este implementarea logicii condiționale. 
 
-În JSX, în cadrul acoladelor, puteți scrie orice expresii JavaScript, deci putem folosi operatorii <mark>?:</mark> și <mark>&&</mark>.
+În JSX, în cadrul acoladelor, puteți scrie orice expresii JavaScript, deci putem folosi operatorii `?:` și `&&`.
 
-Operatorul ternar <mark>?:</mark> este o variantă scurtă a <mark>if/else</mark>:
+Operatorul ternar `?:` este o variantă scurtă a `if/else`:
 
 ```javascript
 const root = ReactDOM.createRoot(document.querySelector("#root"));
@@ -118,7 +118,7 @@ root.render(
 
 Uneori, în astfel de construcții se returnează null, în acest caz, nimic nu va ajunge în DOM:
 
-Operatorul <mark>&&</mark> (și logic) este o variantă a if, dar fără else - se folosește atunci când este necesar să afișați o parte din marcajul 
+Operatorul `&&` (și logic) este o variantă a if, dar fără else - se folosește atunci când este necesar să afișați o parte din marcajul 
 
 JSX doar dacă o anumită condiție este îndeplinită, iar în caz contrar să nu afișați nimic:
 
@@ -147,7 +147,7 @@ root.render(
 
 JSX este foarte asemănător cu HTML, dar există unele diferențe importante pe care va trebui să le rețineți. 
 
-Să începem cu faptul că pentru atribuirea clasei CSS se folosește atributul <mark>className</mark> în loc de <mark>class</mark>:
+Să începem cu faptul că pentru atribuirea clasei CSS se folosește atributul `className` în loc de `class`:
 
 ```javascript
 const root = ReactDOM.createRoot(document.querySelector("#root"));
@@ -166,7 +166,7 @@ root.render(
 
 De asemenea, în JSX, atributul for al etichetei label este diferit.
 
-În varianta JSX, trebuie să scrieți <mark>htmlFor</mark> în loc de <mark>for</mark>:
+În varianta JSX, trebuie să scrieți `htmlFor` în loc de `for`:
 
 ```javascript
 const root = ReactDOM.createRoot(document.querySelector("#root"));
@@ -182,7 +182,7 @@ root.render(
 );
 ```
 
-Pentru toate celelalte proprietăți din JSX se folosește stilul <mark>camelCase</mark> în locul numelor obișnuite ale atributelor HTML:
+Pentru toate celelalte proprietăți din JSX se folosește stilul `camelCase` în locul numelor obișnuite ale atributelor HTML:
 
 ```
 onclick -> onClick
@@ -197,7 +197,7 @@ onmouseover -> onMouseOver
 
 Una dintre caracteristicile JSX este posibilitatea de a atribui valorile style sub forma obiectelor JavaScript. 
 
-În acest caz, numele proprietăților CSS sunt scrise în camelCase în loc de <mark>kebab-case</mark>:
+În acest caz, numele proprietăților CSS sunt scrise în camelCase în loc de `kebab-case`:
 
 ```javascript
 const styles = {
@@ -212,7 +212,7 @@ const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(<div style={styles}>Ce planetă sunt?</div>);
 ```
 
-Valoarea poate fi atribuită direct fără o variabilă intermediară. Pentru aceasta se folosesc paranteze duble <mark>&#0123; &#0123; ... &#0125; &#0125;</mark>: parantezele exterioare semnifică substituția valorii, iar cele interioare se referă la obiectul care descrie setul de stiluri:
+Valoarea poate fi atribuită direct fără o variabilă intermediară. Pentru aceasta se folosesc paranteze duble `&#0123; &#0123; ... &#0125; &#0125;`: parantezele exterioare semnifică substituția valorii, iar cele interioare se referă la obiectul care descrie setul de stiluri:
 
 ```javascript
 const root = ReactDOM.createRoot(document.querySelector("#root"));
@@ -236,7 +236,7 @@ Un alt avantaj: nu este necesar să specificați dimensiunea pentru valorile în
 
 Orice tag deschis trebuie să aibă o pereche - un tag închis. 
 
-Dacă un element nu are conținut intern, tagul trebuie să fie autoînchis. Pentru aceasta, se pune o bară oblică <mark>/</mark> înainte de paranteza sa închisă:
+Dacă un element nu are conținut intern, tagul trebuie să fie autoînchis. Pentru aceasta, se pune o bară oblică `/` înainte de paranteza sa închisă:
 
 ```javascript
 <img src="logo.png" />
@@ -246,7 +246,7 @@ Dacă un element nu are conținut intern, tagul trebuie să fie autoînchis. Pen
 
 Ca și în JavaScript obișnuit, în JSX puteți lăsa comentarii. 
 
-Pentru aceasta, se folosește această construcție: <mark>{/* Acesta este un element */}</mark>. 
+Pentru aceasta, se folosește această construcție: `{/* Acesta este un element */}`. 
 
 Parantezele ajută babel să înțeleagă că aceasta nu este o simplă șir care trebuie plasată în DOM, ci un comentariu. 
 
