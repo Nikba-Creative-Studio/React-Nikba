@@ -261,35 +261,6 @@ export const searchIndex = [
   {
     "title": "Introducere în curs",
     "headers": [],
-    "path": "/guide/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Using Vue in Markdown",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Browser API Access Restrictions",
-        "slug": "browser-api-access-restrictions",
-        "link": "#browser-api-access-restrictions",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "",
-        "slug": "",
-        "link": "#",
-        "children": []
-      }
-    ],
-    "path": "/guide/using-vue.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Introducere în curs",
-    "headers": [],
     "path": "/introduction/introduction.html",
     "pathLocale": "/",
     "extraFields": []
@@ -324,6 +295,35 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Introducere în curs",
+    "headers": [],
+    "path": "/guide/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Using Vue in Markdown",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Browser API Access Restrictions",
+        "slug": "browser-api-access-restrictions",
+        "link": "#browser-api-access-restrictions",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "",
+        "slug": "",
+        "link": "#",
+        "children": []
+      }
+    ],
+    "path": "/guide/using-vue.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "",
     "headers": [],
     "path": "/404.html",
@@ -331,16 +331,3 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}

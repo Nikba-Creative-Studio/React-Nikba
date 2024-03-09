@@ -8,6 +8,7 @@ import clientConfig6 from '/Users/nikba/Work/Dev/React-Nikba/node_modules/@vuepr
 import clientConfig7 from '/Users/nikba/Work/Dev/React-Nikba/node_modules/@vuepress/plugin-copy-code/lib/client/config.js'
 import clientConfig8 from '/Users/nikba/Work/Dev/React-Nikba/node_modules/@vuepress/plugin-search/lib/client/config.js'
 import clientConfig9 from '/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pwa/config.js'
+import clientConfig10 from '/Users/nikba/Work/Dev/React-Nikba/node_modules/@vuepress/plugin-google-analytics/lib/client/config.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -20,4 +21,5 @@ export const clientConfigs = [
   clientConfig7,
   clientConfig8,
   clientConfig9,
+  clientConfig10,
 ]
