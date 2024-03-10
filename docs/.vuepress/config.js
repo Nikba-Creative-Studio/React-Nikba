@@ -104,6 +104,22 @@ export default defineUserConfig({
 					'/base/conclusion',
 				],
 			},
+			{
+				text: "Instrumentarul React",
+				collapsible: true,
+				children: [
+					'/tools/introduction',
+					'/tools/infrastucture',
+					'/tools/appstructure',
+					'/tools/import',
+					'/tools/images',
+					'/tools/css',
+					'/tools/fonts',
+					'/tools/debbuging',
+					'/tools/infrastructure',
+					'/tools/conclusion',
+				],
+			}
 		],
 	}),
 

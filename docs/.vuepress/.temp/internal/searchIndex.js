@@ -102,6 +102,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Concluzie",
+    "headers": [],
+    "path": "/base/conclusion.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Conectarea React",
     "headers": [],
     "path": "/base/connect.html",
@@ -433,6 +440,120 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Structura aplicației",
+    "headers": [],
+    "path": "/tools/appstructure.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Concluzie",
+    "headers": [],
+    "path": "/tools/conclusion.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "CSS-Module. Composes",
+    "headers": [],
+    "path": "/tools/css.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Depanarea aplicației",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Instalarea în Chrome",
+        "slug": "instalarea-in-chrome",
+        "link": "#instalarea-in-chrome",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Instalarea în Firefox",
+        "slug": "instalarea-in-firefox",
+        "link": "#instalarea-in-firefox",
+        "children": []
+      }
+    ],
+    "path": "/tools/debbuging.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Utilizarea fonturilor",
+    "headers": [],
+    "path": "/tools/fonts.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Utilizarea imaginilor",
+    "headers": [],
+    "path": "/tools/images.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Importul de module",
+    "headers": [],
+    "path": "/tools/import.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Depanarea aplicației",
+    "headers": [],
+    "path": "/tools/infrastructure.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Infrastructura aplicației - CRA",
+    "headers": [],
+    "path": "/tools/infrastucture.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Introducere în instrumentarul React",
+    "headers": [],
+    "path": "/tools/introduction.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Introducere în curs",
+    "headers": [],
+    "path": "/guide/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Using Vue in Markdown",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Browser API Access Restrictions",
+        "slug": "browser-api-access-restrictions",
+        "link": "#browser-api-access-restrictions",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "",
+        "slug": "",
+        "link": "#",
+        "children": []
+      }
+    ],
+    "path": "/guide/using-vue.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Introducere în curs",
     "headers": [],
     "path": "/introduction/introduction.html",
@@ -469,45 +590,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Introducere în curs",
-    "headers": [],
-    "path": "/guide/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Using Vue in Markdown",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Browser API Access Restrictions",
-        "slug": "browser-api-access-restrictions",
-        "link": "#browser-api-access-restrictions",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "",
-        "slug": "",
-        "link": "#",
-        "children": []
-      }
-    ],
-    "path": "/guide/using-vue.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "",
     "headers": [],
     "path": "/404.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Concluzie",
-    "headers": [],
-    "path": "/base/conclusion.html",
     "pathLocale": "/",
     "extraFields": []
   }
