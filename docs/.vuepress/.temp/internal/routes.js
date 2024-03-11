@@ -1,7 +1,7 @@
 export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
-  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Home"} }],
+  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Curs Online"} }],
   ["/get-started.html", { loader: () => import(/* webpackChunkName: "get-started.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/get-started.html.js"), meta: {"title":"Curs"} }],
   ["/base/advancedjsx.html", { loader: () => import(/* webpackChunkName: "advancedjsx.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/base/advancedjsx.html.js"), meta: {"title":"Utilizarea avansată a JSX. React.Children"} }],
   ["/base/classcomponent.html", { loader: () => import(/* webpackChunkName: "classcomponent.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/base/classcomponent.html.js"), meta: {"title":"Componente de clasă în detalii"} }],
@@ -22,6 +22,10 @@ export const routes = Object.fromEntries([
   ["/base/stateup.html", { loader: () => import(/* webpackChunkName: "stateup.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/base/stateup.html.js"), meta: {"title":"Ridicarea stării"} }],
   ["/base/stateupdate.html", { loader: () => import(/* webpackChunkName: "stateupdate.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/base/stateupdate.html.js"), meta: {"title":"Cum să modifici starea în componentele React"} }],
   ["/base/virtualdom.html", { loader: () => import(/* webpackChunkName: "virtualdom.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/base/virtualdom.html.js"), meta: {"title":"Virtual DOM"} }],
+  ["/introduction/introduction.html", { loader: () => import(/* webpackChunkName: "introduction.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/introduction/introduction.html.js"), meta: {"title":"Introducere în curs"} }],
+  ["/introduction/program.html", { loader: () => import(/* webpackChunkName: "program.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/introduction/program.html.js"), meta: {"title":"Programul cursului"} }],
+  ["/guide/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/guide/index.html.js"), meta: {"title":"Introducere în curs"} }],
+  ["/guide/using-vue.html", { loader: () => import(/* webpackChunkName: "using-vue.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/guide/using-vue.html.js"), meta: {"title":"Using Vue in Markdown"} }],
   ["/tools/appstructure.html", { loader: () => import(/* webpackChunkName: "appstructure.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/tools/appstructure.html.js"), meta: {"title":"Structura aplicației"} }],
   ["/tools/conclusion.html", { loader: () => import(/* webpackChunkName: "conclusion.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/tools/conclusion.html.js"), meta: {"title":"Concluzie"} }],
   ["/tools/css.html", { loader: () => import(/* webpackChunkName: "css.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/tools/css.html.js"), meta: {"title":"CSS-Module. Composes"} }],
@@ -29,29 +33,8 @@ export const routes = Object.fromEntries([
   ["/tools/fonts.html", { loader: () => import(/* webpackChunkName: "fonts.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/tools/fonts.html.js"), meta: {"title":"Utilizarea fonturilor"} }],
   ["/tools/images.html", { loader: () => import(/* webpackChunkName: "images.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/tools/images.html.js"), meta: {"title":"Utilizarea imaginilor"} }],
   ["/tools/import.html", { loader: () => import(/* webpackChunkName: "import.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/tools/import.html.js"), meta: {"title":"Importul de module"} }],
-  ["/tools/infrastructure.html", { loader: () => import(/* webpackChunkName: "infrastructure.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/tools/infrastructure.html.js"), meta: {"title":"Depanarea aplicației"} }],
+  ["/tools/infrastructure.html", { loader: () => import(/* webpackChunkName: "infrastructure.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/tools/infrastructure.html.js"), meta: {"title":"Compilarea aplicației"} }],
   ["/tools/infrastucture.html", { loader: () => import(/* webpackChunkName: "infrastucture.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/tools/infrastucture.html.js"), meta: {"title":"Infrastructura aplicației - CRA"} }],
   ["/tools/introduction.html", { loader: () => import(/* webpackChunkName: "introduction.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/tools/introduction.html.js"), meta: {"title":"Introducere în instrumentarul React"} }],
-  ["/guide/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/guide/index.html.js"), meta: {"title":"Introducere în curs"} }],
-  ["/guide/using-vue.html", { loader: () => import(/* webpackChunkName: "using-vue.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/guide/using-vue.html.js"), meta: {"title":"Using Vue in Markdown"} }],
-  ["/introduction/introduction.html", { loader: () => import(/* webpackChunkName: "introduction.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/introduction/introduction.html.js"), meta: {"title":"Introducere în curs"} }],
-  ["/introduction/program.html", { loader: () => import(/* webpackChunkName: "program.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/introduction/program.html.js"), meta: {"title":"Programul cursului"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/Users/nikba/Work/Dev/React-Nikba/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}

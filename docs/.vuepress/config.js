@@ -140,6 +140,7 @@ export default defineUserConfig({
 
 		sitemapPlugin({
 			// options
+			hostname: "https://react.md",
 		}),
 		seoPlugin({
 			// options

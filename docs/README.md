@@ -1,6 +1,6 @@
 ---
 home: true
-title: Home
+title: Curs Online
 heroImage: ./react.svg
 actions:
   - text: Începe acum →

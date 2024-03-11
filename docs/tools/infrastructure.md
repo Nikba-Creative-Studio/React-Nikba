@@ -1,5 +1,5 @@
 ---
-title: Depanarea aplicației
+title: Compilarea aplicației
 lang: ro-RO
 ---
 
